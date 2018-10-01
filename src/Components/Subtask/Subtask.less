@@ -1,0 +1,137 @@
+.subtaskarea {
+  margin-bottom: 50px;
+  .title {
+    font-size: 14px;
+    margin-bottom: 21px;
+    font-weight: 400;
+  }
+}
+
+.singletask {
+  margin-bottom: 20px;
+  &:hover {
+    .editcontent {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  > div {
+    display: inline-block;
+  }
+  label {
+    cursor: pointer;
+    span {
+      margin-left: 10px;
+      color: #525252;
+      font-size: 13px;
+    }
+    &::before {
+      border: 1px solid rgb(229, 228, 228);
+      background-color: rgb(255, 255, 255);
+    }
+    &::before,
+    &::after {
+      border-radius: 3px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  p {
+    color: #959595;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-left: 35px;
+  }
+}
+
+.subtaskinfo {
+  margin-left: 15px;
+  > img {
+    margin-right: 8px;
+  }
+  span {
+    color: #989898;
+    font-size: 13px;
+  }
+  .date {
+    color: #4a90e2;
+    display: inline-block;
+    padding-left: 30px;
+  }
+}
+
+.inputgrouptext {
+  background-color: transparent;
+  color: #d7dee2;
+  border-color: #ececec;
+  font-size: 22px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.formcontrol {
+  border-color: #ececec;
+  border-left: 0px solid #000;
+  padding-left: 0;
+  &:focus {
+    border-color: #ececec;
+    box-shadow: none;
+  }
+}
+
+.taskarea {
+  padding-left: 35px;
+  margin-bottom: 24px;
+  input {
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #ececec;
+    padding-left: 0px;
+    &:focus {
+      box-shadow: none;
+      border-color: #1a9ed4;
+    }
+  }
+}
+
+.editcontent {
+  display: inline-block;
+  float: right;
+  padding-right: 45px;
+  transition: all .4s ease;
+  opacity: 0;
+  visibility: hidden;
+  > li {
+    display: inline-block;
+    cursor: pointer;
+    min-height: 14px;
+    &:first-child {
+      padding-right: 38px;
+    }
+    &:nth-child(2) {
+      padding-right: 20px;
+    }
+    position: relative;
+    line-height: 1;
+    > img {
+      transition: all .4s ease;
+      backface-visibility: hidden;
+      &:not(.mainimage) {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    &:hover {
+      .hoverimage {
+        opacity: 1;
+        visibility: visible;
+      }
+      .mainimage {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}

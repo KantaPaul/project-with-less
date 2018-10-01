@@ -1,0 +1,87 @@
+.comment-wraper {
+  .title {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+}
+
+.cooment-area {
+  background-color: #fafafa;
+  border-radius: 3px;
+  border: 1px solid #ececec;  
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.single-comment {
+  margin-bottom: 15px;
+  position: relative;
+  .avatar {
+    float: left;
+    display: inline-block;
+    margin-right: 18px;
+  }
+  .cooment-content {
+    display: inline-block;
+    > p {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+    > a {
+      color: #525252;
+      font-size: 13px;
+    }
+  }
+  .commentor-bio {
+    margin-right: 4px;
+    .commentor-title {
+      color: #525252;
+      font-size: 12px;
+      font-weight: 700;
+      padding-right: 20px;
+    }
+    .commentor-time {
+      color: #95a5a6;
+      font-size: 13px;
+    }
+  }
+  .angleicon {
+    float: right;
+    cursor: pointer;
+  }
+}
+
+.add-comment-area {
+  .form-control {
+    width: 100%;
+    border: 1px solid #ececec;
+    border-right: 0px solid #000;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			color: #bdc3c7;
+			font-size: 13px;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+			color: #bdc3c7;
+			font-size: 13px;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+			color: #bdc3c7;
+			font-size: 13px;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+			color: #bdc3c7;
+			font-size: 13px;
+		}
+  }
+  .input-group-text {
+    background-color: #ffffff;
+    border-color: #ececec;
+  }
+  .comment-form {
+    float: right;
+    width: calc(100% - 48px);
+  }
+  .input-group {
+    flex-wrap: nowrap;
+  }
+}

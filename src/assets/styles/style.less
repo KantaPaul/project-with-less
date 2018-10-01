@@ -1,0 +1,177 @@
+@black: #000;
+@white: #fff;
+@bfSize: 16px;
+@fontWeight: 400;
+@blineHeight: 1.5;
+
+:root {
+	font-size: @bfSize;
+}
+
+body {
+	font-weight: @fontWeight;
+	line-height: @blineHeight;
+	color: @black;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+iframe {
+	border: none;
+}
+a,
+b,
+div,
+ul,
+li {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	-moz-outline-: none;
+}
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+	-moz-outline: none;
+	outline: none;
+}
+img:not([draggable]),
+embed,
+object,
+video {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	text-decoration: none;
+	outline: 0;
+}
+a:active,
+a:focus,
+a:hover,
+a:visited {
+	text-decoration: none;
+	outline: 0;
+}
+img {
+	border: none;
+	max-width: 100%;
+}
+ul , li {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+.clear-both:before,
+.clear-both:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+button:focus {
+	outline: none;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+.form-control {
+	&:focus {
+		box-shadow: none;
+		border-color: #ced4da;
+	}
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #b0babc;
+	font-size: 12px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: #b0babc;
+	font-size: 12px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: #b0babc;
+	font-size: 12px;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: #b0babc;
+	font-size: 12px;
+}
+
+input,
+textarea,
+[contenteditable] {
+  caret-color: #1a9ed4;
+}
+
+
+/* main style */
+.mainwraper {
+  background-image: url('./../images//background-image/background-image.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+	background-size: cover;
+	height: 100vh;
+	min-height: 1100px;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: @black;
+  opacity: .3;
+}
+
+.App {
+  position: relative;
+  z-index: 9;
+  background-color: @white;
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+	padding: 25px;
+	margin-top: 32px;
+}
+
+.left-contet {
+  float: left;
+  display: inline-block;
+}
+
+.right-cotent {
+  float: right;
+  display: inline-block;
+}
+
+.card-header {
+  margin-bottom: 22px;
+}
+
+.append-input {
+	margin-bottom: 24px;
+	.input-group-text {
+		background-color: transparent;
+		padding-left: 10px;
+		padding-top: 10px;
+		border-color: #ececec;
+	}
+	.form-control {
+		border-left: 0px solid #000;
+		border-right: 0px solid #000;
+		border-color: #ececec;
+		padding-left: 0;
+	}
+}

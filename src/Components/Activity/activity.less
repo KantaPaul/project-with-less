@@ -1,0 +1,31 @@
+.activiy-wraper {
+  .activity-title {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+}
+
+.single-activity {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  > img {
+    margin-right: 10px;
+  }
+  .activity-desc {
+    color: #788383;
+    > strong {
+      color: #000000;
+      font-weight: normal;
+    }
+  }
+  .activity-time {
+    color: #b0babc;
+    padding-left: 8px;
+  }
+  > span {
+    position: relative;
+    top: 1px;
+    font-size: 13px;
+  }
+}
