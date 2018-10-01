@@ -60,7 +60,9 @@ module.exports = (env) => {
                     use: [
                     {
                         loader: 'url-loader',
-                        query: { limit : 10000 }
+                        query: { 
+                            limit : 100000000000
+                        }
                     }
                 ]
             }]
