@@ -25,8 +25,8 @@ let Menu = () => {
           </div>
           <div className={bootstrap.colLg4}>
             <div className={bootstrap.textRight}>
-              <a className={[bootstrap.btn, bootstrap.btnPrimary, bootstrap.mr2].join(' ')} target="_blank" href="https://github.com/KantaPaul/my-project">Git Repo</a>
-              <a className={[bootstrap.btn, bootstrap.btnSecondary].join(' ')} target="_blank" href="https://drive.google.com/open?id=1p_Zulunkzhi8hP1YVnHwsqHgUF_6w1VT">Download</a>
+              <a className={[bootstrap.btn, bootstrap.btnPrimary, bootstrap.mr2].join(' ')} target="_blank" href="https://github.com/KantaPaul/project-with-less">Git Repo</a>
+              <a className={[bootstrap.btn, bootstrap.btnSecondary].join(' ')} target="_blank" href="https://drive.google.com/open?id=1MJl5f-S49_KLHHKtg3Nx4hsHrdDoOb0a">Download</a>
             </div>
           </div>
         </div>
