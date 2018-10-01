@@ -1,5 +1,5 @@
 {
-  "name": "react-with-redux",
+  "name": "WeDevs Project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -49,12 +49,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KantaPaul/react-redux.git"
+    "url": "git+https://github.com/KantaPaul/project-with-less"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KantaPaul/react-redux/issues"
+    "url": "https://github.com/KantaPaul/project-with-less/issues"
   },
-  "homepage": "https://github.com/KantaPaul/react-redux#readme"
+  "homepage": "https://github.com/KantaPaul/project-with-less#readme"
 }
